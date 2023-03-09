@@ -1,5 +1,9 @@
 /** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
+  darkMode: 'class',
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
     fontSize: {
@@ -70,6 +74,10 @@ module.exports = {
           500: 'var(--color-green-500)',
           600: 'var(--color-green-600)',
         },
+      },
+
+      fontFamily: {
+        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
     },
   },
