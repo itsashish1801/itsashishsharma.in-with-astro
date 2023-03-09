@@ -1,0 +1,19 @@
+---
+import Logo from '../Icons/Logo.astro';
+import LogoDark from '../Icons/LogoDark.astro';
+---
+
+<header>
+  <nav class='flex items-center justify-between py-9 lg:py-12'>
+    <a href='/' class='h-10 w-[120px] relative'>
+      <Logo
+        extraClasses='absolute inset-0 w-full h-auto transition duration-500 opacity-100 dark:opacity-0'
+      />
+      <LogoDark
+        extraClasses='absolute inset-0 w-full h-auto transition duration-500 opacity-0 dark:opacity-100'
+      />
+    </a>
+
+    <button></button>
+  </nav>
+</header>
