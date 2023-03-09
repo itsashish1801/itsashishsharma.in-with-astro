@@ -6,7 +6,7 @@ const { dateString, extraClasses } = Astro.props;
 
 interface Props {
   dateString: string;
-  extraClasses: string;
+  extraClasses?: string;
 }
 
 const date = parseISO(dateString);

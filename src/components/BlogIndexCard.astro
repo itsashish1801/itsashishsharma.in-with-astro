@@ -1,0 +1,41 @@
+---
+import Chevron from '../Icons/Chevron.astro';
+import Date from './Date.astro';
+
+interface Article {
+  date: string;
+  title: string;
+  description: string;
+}
+
+interface Props {
+  article: Article;
+}
+
+const { article } = Astro.props;
+---
+
+<article class='max-w-xl group'>
+  <a href='' class='relative'>
+    <div
+      class='absolute z-0 transition scale-95 bg-gray-100 opacity-0 dark:bg-gray-800 -inset-y-6 -inset-x-4 sm:-inset-x-6 sm:rounded-2xl group-hover:scale-100 group-hover:opacity-100'
+    >
+    </div>
+
+    <div class='relative'>
+      <Date dateString={article.date} />
+
+      <h2 class='mt-3 text-base font-semibold text-black dark:text-white'>
+        {article.title}
+      </h2>
+      <p class='mt-2 text-sm text-gray-400 dark:text-slate-500'>
+        {article.description}
+      </p>
+
+      <div class='flex items-center mt-4 text-primary dark:text-primary-dark'>
+        <span class='text-sm font-medium'>Read article</span>
+        <Chevron />
+      </div>
+    </div>
+  </a>
+</article>
