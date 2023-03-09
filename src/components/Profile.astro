@@ -1,0 +1,43 @@
+---
+import Me from '../assets/me.webp';
+import Github from '../Icons/Github.astro';
+import Instagram from '../Icons/Instagram.astro';
+import Linkedin from '../Icons/Linkedin.astro';
+import Twitter from '../Icons/Twitter.astro';
+---
+
+<div class='py-16'>
+  <img
+    src={Me}
+    alt='Photo of Ashish Sharma'
+    class='object-cover w-16 h-16 bg-gray-100 rounded-full dark:bg-gray-800'
+  />
+
+  <div class='max-w-2xl'>
+    <h1
+      class='mt-6 text-4xl font-bold tracking-tight text-black sm:text-5xl dark:text-white'
+    >
+      Intrigued being, Designer &amp; Frontend Engineer.
+    </h1>
+    <p class='mt-6 text-base text-gray-400 dark:text-slate-500'>
+      I&apos;m Ashish, I design and code beautifully simple things, and I love
+      what I do. Here I write about my ideas and a few things I&apos;ve learned,
+      mostly about programming, design, philosophy, and life.
+    </p>
+  </div>
+
+  <div class='flex gap-6 mt-6'>
+    <a href='https://twitter.com/itsashish1801' class='group'>
+      <Twitter />
+    </a>
+    <a href='https://www.instagram.com/itsashish1801' class='group'>
+      <Instagram />
+    </a>
+    <a href='https://github.com/itsashish1801' class='group'>
+      <Github />
+    </a>
+    <a href='https://www.linkedin.com/in/itsashish1801' class='group'>
+      <Linkedin />
+    </a>
+  </div>
+</div>
