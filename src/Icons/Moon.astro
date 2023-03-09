@@ -1,9 +1,10 @@
 ---
 interface Props {
   extraClasses: string;
+  style: object;
 }
 
-const { extraClasses } = Astro.props;
+const { extraClasses, style } = Astro.props;
 ---
 
 <svg
@@ -13,6 +14,7 @@ const { extraClasses } = Astro.props;
   stroke-width='1.5'
   stroke='currentColor'
   class={extraClasses}
+  style={style}
 >
   <path
     stroke-linecap='round'
