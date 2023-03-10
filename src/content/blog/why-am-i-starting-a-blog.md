@@ -1,5 +1,5 @@
 ---
-title: 'Why am I starting a blog'
+title: 'Why am I starting a blog?'
 date: '2023-03-10'
 description: "In this post, I'll explain why I've decided to start a blog and what kinds of things you can look forward to reading about in the blogs to come."
 banner: 'https://res.cloudinary.com/ashishimages/image/upload/v1678447560/blog/hf4olwb9yw2edfyoezrk.jpg'
