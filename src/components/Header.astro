@@ -1,20 +1,12 @@
 ---
-import Logo from '../Icons/Logo.astro';
-import LogoDark from '../Icons/LogoDark.astro';
 import Moon from '../Icons/Moon.astro';
 import Sun from '../Icons/Sun.astro';
+import DynamicLogo from './DynamicLogo.astro';
 ---
 
 <header>
   <nav class='flex items-center justify-between py-9 lg:py-12'>
-    <a href='/' class='h-10 w-[120px] relative'>
-      <Logo
-        extraClasses='absolute inset-0 w-full h-auto transition duration-500 opacity-100 dark:opacity-0'
-      />
-      <LogoDark
-        extraClasses='absolute inset-0 w-full h-auto transition duration-500 opacity-0 dark:opacity-100'
-      />
-    </a>
+    <DynamicLogo />
 
     <button
       class='inline-flex items-center justify-center p-2.5 overflow-hidden border-2 border-gray-200 rounded-full hover:border-black focus:border-black focus:outline-none dark:border-gray-600 dark:hover:border-white'
