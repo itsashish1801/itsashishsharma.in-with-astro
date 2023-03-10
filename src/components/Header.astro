@@ -1,26 +1,11 @@
 ---
-import Moon from '../Icons/Moon.astro';
-import Sun from '../Icons/Sun.astro';
 import DynamicLogo from './DynamicLogo.astro';
+import ThemeToggler from './ThemeToggler.astro';
 ---
 
 <header>
   <nav class='flex items-center justify-between py-9 lg:py-12'>
     <DynamicLogo />
-
-    <button
-      class='inline-flex items-center justify-center p-2.5 overflow-hidden border-2 border-gray-200 rounded-full hover:border-black focus:border-black focus:outline-none dark:border-gray-600 dark:hover:border-white'
-    >
-      <div class='relative w-6 h-6'>
-        <Sun
-          extraClasses='absolute w-6 h-6 inset-0 text-black transition duration-1000 transform rotate-0 motion-reduce:duration-[0s] dark:-rotate-90 dark:text-white'
-          style={{ transformOrigin: '50% 100px' }}
-        />
-        <Moon
-          extraClasses='absolute w-6 h-6 inset-0 text-black transition duration-1000 transform rotate-90 motion-reduce:duration-[0s] dark:rotate-0 dark:text-white'
-          style={{ transformOrigin: '50% 100px' }}
-        />
-      </div>
-    </button>
+    <ThemeToggler />
   </nav>
 </header>
