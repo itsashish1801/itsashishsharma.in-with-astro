@@ -1,5 +1,7 @@
 ---
 import Date from './Date.astro';
+
+const { frontmatter } = Astro.props;
 ---
 
 <article itemscope itemtype='http://schema.org/Article' class='py-16'>
@@ -23,18 +25,18 @@ import Date from './Date.astro';
   </a>
 
   <header class='mt-20'>
-    <!-- <Date dateString={frontmatter.date} /> -->
+    <Date dateString={frontmatter.date} />
     <h1
       itemprop='headline'
       class='mt-6 text-4xl font-bold tracking-tight text-black dark:text-white sm:text-5xl'
     >
-      <!-- {frontmatter.title} -->
+      {frontmatter.title}
     </h1>
   </header>
 
   <section itemprop='articleBody' class='mt-8 prose dark:prose-invert'>
-    <!-- <img src={frontmatter.banner} alt='Image' width={736} height={420} /> -->
-    <!-- <Component /> -->
+    <img src={frontmatter.banner} alt='Image' width={736} height={420} />
+    <slot />
   </section>
 </article>
 

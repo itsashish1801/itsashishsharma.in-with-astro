@@ -9,11 +9,12 @@ interface Props {
 }
 
 const { post } = Astro.props;
+const { slug } = post;
 const { title, description, date } = post.data;
 ---
 
 <article class='max-w-xl group'>
-  <a href='' class='relative'>
+  <a href={'/blog/' + slug} class='relative'>
     <div
       class='absolute z-0 transition scale-95 bg-gray-100 opacity-0 dark:bg-gray-800 -inset-y-6 -inset-x-4 sm:-inset-x-6 sm:rounded-2xl group-hover:scale-100 group-hover:opacity-100'
     >
