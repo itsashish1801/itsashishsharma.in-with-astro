@@ -7,7 +7,7 @@ bannerAlt: 'Person typing something with the keyboard'
 categories: ['personal']
 ---
 
-> **[If you want to change the world, pick up your pen and write"](https://www.jaquellecrowe.com/blog//2011/03/if-you-want-to-change-world-pick-up_14.html)**
+> **"If you want to change the world, pick up your pen and write"**
 
 Martin Luther once penned the quote above, "If you want to change the world, pick up your pen and write." But we prefer typing these days. But the goal remains the same 'Changing the world.’
 
@@ -24,3 +24,5 @@ One of the other benefits We’ll get is enriching our curiosity. From time to t
 ## What will you write about?
 
 I can share what I am learning and how it is helping me in moving forward in my life. Currently, I am mostly thinking about writing on topics related to Programming & Design and sharing some bits of my learning in a more uncomplicated form which can be helpful for others.
+
+**Welcome to my blog.**
