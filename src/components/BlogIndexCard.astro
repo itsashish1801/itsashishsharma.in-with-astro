@@ -1,8 +1,15 @@
 ---
+import type { CollectionEntry } from 'astro:content';
+
 import Chevron from '../Icons/Chevron.astro';
 import Date from './Date.astro';
 
-const { article } = Astro.props;
+interface Props {
+  post: CollectionEntry<'blog'>;
+}
+
+const { post } = Astro.props;
+const { title, description, date } = post.data;
 ---
 
 <article class='max-w-xl group'>
@@ -13,13 +20,13 @@ const { article } = Astro.props;
     </div>
 
     <div class='relative'>
-      <Date dateString={article.date} />
+      <Date dateString={date} />
 
       <h2 class='mt-3 text-base font-semibold text-black dark:text-white'>
-        {article.title}
+        {title}
       </h2>
       <p class='mt-2 text-sm text-gray-400 dark:text-slate-500'>
-        {article.description}
+        {description}
       </p>
 
       <div class='flex items-center mt-4 text-primary dark:text-primary-dark'>
