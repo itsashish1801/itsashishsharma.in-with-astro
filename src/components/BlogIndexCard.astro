@@ -2,16 +2,6 @@
 import Chevron from '../Icons/Chevron.astro';
 import Date from './Date.astro';
 
-interface Article {
-  date: string;
-  title: string;
-  description: string;
-}
-
-interface Props {
-  article: Article;
-}
-
 const { article } = Astro.props;
 ---
 
