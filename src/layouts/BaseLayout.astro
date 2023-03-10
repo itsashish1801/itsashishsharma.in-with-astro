@@ -1,7 +1,15 @@
 ---
-import Header from '../components/Header.astro';
+import '../styles/global.css';
 
-const { pageTitle } = Astro.props;
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import Container from '../components/Container.astro';
+
+interface Props {
+  pageTitle?: string;
+}
+
+const { pageTitle = 'Ashish Sharma' } = Astro.props;
 ---
 
 <html
@@ -17,7 +25,10 @@ const { pageTitle } = Astro.props;
     <title>{pageTitle}</title>
   </head>
   <body>
-    <Header />
-    <slot />
+    <Container>
+      <Header />
+      <slot />
+      <Footer />
+    </Container>
   </body>
 </html>

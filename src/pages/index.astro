@@ -1,29 +1,10 @@
 ---
-import '../styles/global.css';
-
-import Container from '../components/Container.astro';
-import Header from '../components/Header.astro';
 import Profile from '../components/Profile.astro';
 import BlogIndex from '../components/BlogIndex.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<html
-  lang='en'
-  class="h-full scroll-smooth antialiased [font-feature-settings:'ss01']"
->
-  <head>
-    <meta charset='utf-8' />
-    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
-    <link rel='preconnect' href='https://rsms.me/' />
-    <link rel='stylesheet' href='https://rsms.me/inter/inter.css' />
-    <meta name='viewport' content='width=device-width' />
-    <title>Ashish Sharma</title>
-  </head>
-  <body>
-    <Container>
-      <Header />
-      <Profile />
-      <BlogIndex />
-    </Container>
-  </body>
-</html>
+<BaseLayout>
+  <Profile />
+  <BlogIndex />
+</BaseLayout>
